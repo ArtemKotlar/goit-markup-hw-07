@@ -15,17 +15,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container main-nav">
         <nav class="nav">
           <a class="logo" href="./index.html"
             >Web<samp class="logo-link">Studio</samp></a>
 
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="item">
               <a href="./index.html" class="link link-nav current">Студія</a>
             </li>
@@ -36,7 +35,7 @@
           </ul>
         </nav>
 
-        <ul class="mail-tel list">
+        <ul class="mail-tel">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link mail">
               <svg class="mail-icon" width="16" height="12">
@@ -65,12 +64,12 @@
         </button>
       </section>
 
-      <section class="section no-padding container">
-        <h2 class="visually-hidden">Особливості</h2>
-        <ul class="feature-list list">
-          <li class="feature">
-            <div class="feature-item">
-              <svg class="feature-icon" width="70" height="70">
+      <section class="features section__padding container">
+        <h2 class="visually__hidden">Особливості</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features-item">
+              <svg class="features-icon" width="70" height="70">
                 <use href="./images/icons.svg#antenna"></use>
               </svg>
             </div>
@@ -81,9 +80,9 @@
             </p>
           </li>
 
-          <li class="feature">
-            <div class="feature-item">
-              <svg class="feature-icon" width="70" height="70">
+          <li class="features">
+            <div class="features-item">
+              <svg class="features-icon" width="70" height="70">
                 <use href="./images/icons.svg#clock"></use>
               </svg>
             </div>
@@ -94,9 +93,9 @@
             </p>
           </li>
 
-          <li class="feature">
-            <div class="feature-item">
-              <svg class="feature-icon" width="70" height="70">
+          <li class="features">
+            <div class="features-item">
+              <svg class="features-icon" width="70" height="70">
                 <use href="./images/icons.svg#diagram"></use>
               </svg>
             </div>
@@ -106,9 +105,9 @@
             </p>
           </li>
 
-          <li class="feature">
-            <div class="feature-item">
-              <svg class="feature-icon" width="70" height="70">
+          <li class="features">
+            <div class="features-item">
+              <svg class="features-icon" width="70" height="70">
                 <use href="./images/icons.svg#astronaut"></use>
               </svg>
             </div>
@@ -122,8 +121,8 @@
       </section>
 
       <section class="section container">
-        <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="work list">
+        <h2 class="section__title">Чим ми займаємося</h2>
+        <ul class="work">
           <li class="item-work">
             <img src="./images/work1.jpg" alt="computer" width="370" />
             <p class="text-background">Десктопні додатки</p>
@@ -141,8 +140,8 @@
 
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list list">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team-list">
             <li class="element-team">
               <img src="./images/team1.jpg" alt="Ігор Дем'яненко" width="270" />
               <h3 class="title">Ігор Дем'яненко</h3>
@@ -365,8 +364,8 @@
       </section>
 
       <section class="section container">
-        <h2 class="section-title">Постійні клієнти</h2>
-        <ul class="clients list">
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="clients">
           <li class="customers">
             <a href="" class="clients-item link" target="_blank">
               <svg class="clients-icon" width="106" height="60">
@@ -426,7 +425,7 @@
           >
 
           <address class="address-team">
-            <ul class="list">
+            <ul class="address-list">
               <li class="info-maps">
                 <a
                   class="address maps"

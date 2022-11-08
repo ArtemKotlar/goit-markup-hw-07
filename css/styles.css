@@ -1,0 +1,713 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* Секція Герой */
+
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero {
+    display: block;
+    background: #2F303A;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid #C4C4C4;
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Параметри секцій */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding {
+    padding-bottom: 0;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+}
+
+/* Секція Особливості */
+
+.feature-list .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.feature-list .text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.feature:nth-child(4n) {
+    margin-right: 0;
+}
+
+.feature:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
+.feature-icon {
+    margin: 0 auto;
+    fill: currentColor;
+}
+
+/* Секція Роботи */
+
+.work {
+    display: flex;
+  } 
+
+.item-work {
+    position: relative;
+    width: calc((100%-60px)/3);
+    margin-right: 30px;
+}
+
+.item-work:nth-child(3n) {
+    margin-right: 0;
+}
+
+.text-background {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    padding: 27px 0;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+/* Секція Команда */
+
+.team-list .title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+    text-align: center
+}
+
+.team-list .text-two {
+    margin-top: 10px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center
+
+}
+
+.team {
+    background: #F5F4FA
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element-team {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.element-team:nth-child(4n) {
+    margin-right: 0;
+}
+
+.element-team:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.socials-team:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials-item {
+    width: 44px;
+    height: 44px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #AFB1B8;
+    transition: color var(--cubic-time),
+    background-color var(--cubic-time);
+}
+
+.socials-item:hover,
+.socials-item:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accnent-color);
+}
+
+.socials-icon {
+    fill: currentColor;
+}
+
+/* Кнопки */
+
+.button-primaru {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    min-width: 216px;
+
+    color: var(--primary-white-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background var(--cubic-time),
+    box-shadow var(--cubic-time);
+}
+
+.button-primaru.submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    min-width: 200px;
+}
+
+.button-primaru.subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 12px;
+    min-width: 200px;
+}
+
+.button-primaru:hover,
+.button-primaru:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 23px;
+    padding-right: 23px;
+    color: var(--primary-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color var(--cubic-time),
+    background-color var(--cubic-time),
+    box-shadow var(--cubic-time);
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color:var(--accnent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Постійні клієнти */
+
+.clients {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.customers {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+.customers:nth-child(6n) {
+    margin-right: 0;
+}
+
+.clients-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: border var(--cubic-time),
+    color var(--cubic-time);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid var(--accnent-color);
+    color: var(--accnent-color);
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+/* Фільтер */
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+/* Портфоліо */
+
+.portfolios-list .title-two {
+    margin-bottom: 4px;
+    margin-left: 24px;
+    color:var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2; 
+    letter-spacing: 0.06em;
+}
+
+.portfolios-list .text-with {
+    margin-bottom: 20px;
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+.portfolios-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.element:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.activ {
+    position: relative;
+    overflow: hidden;
+}
+
+.activ-text {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--primary-white-color);
+    display: flex;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--cubic-time);
+}
+
+.element-text {
+    padding-top: 20px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+}
+
+.element-link {
+    display: block;
+    transition: box-shadow var(--cubic-time);
+}
+
+.element-link:hover .activ-text,
+.element-link:focus .activ-text {
+    transform: translateY(0);
+}
+
+.element-link:hover,
+.element-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Модельне вікно */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: visibility var(--cubic-time),
+    opacity var(--cubic-time);
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-body {
+    transform: scale(1.3);
+}
+
+.modal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+}
+
+.modal-body {
+    position: relative;
+    width: 528px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: scale(1);
+    transition: transform var(--cubic-time);
+}
+
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal-close {
+    fill: currentColor;
+    transition: color var(--cubic-time);
+}
+
+.button-close:hover,
+.button-close:focus {
+    color: var(--accnent-color);
+}
+
+.form {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-text {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 12px;
+    color: var(--primary-text-color);
+}
+
+.label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.input {
+    display: block;
+    padding: 12px;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: navy;
+    transition: border-color var(--cubic-time);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+
+.input:focus {
+    border-color: var(--accnent-color);
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: fill var(--cubic-time);
+}
+
+.input:focus+.form-icon {
+    fill: var(--accnent-color);
+}
+
+.textarea {
+    height: 120px;
+    resize: none;
+    outline: navy;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+    transition: border-color var(--cubic-time);
+}
+
+.textarea:focus {
+    border-color: var(--accnent-color);
+}
+
+.textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.check-label {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.check-input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.check-link {
+    margin-left: 5px;
+    text-decoration: underline;
+    color: var(--accnent-color);
+}
+
+.check-icon {
+    display: flex;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border-radius: 2px;
+    border: 2px solid #212121;
+    transition: background-color var(--cubic-time),
+    border-color var(--cubic-time);
+}
+
+
+.check-input:checked + .check-icon {
+    border-color: var(--accnent-color);
+    background-color: var(--accnent-color);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.button-primaru.submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    min-width: 200px;
+}

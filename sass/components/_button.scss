@@ -1,4 +1,4 @@
-.button-primaru {
+.button__primaru {
     display: inline-block;
     border: 1px solid transparent;
     padding-top: 9px;
@@ -17,30 +17,30 @@
     cursor: pointer;
     transition: background var(--cubic-time),
     box-shadow var(--cubic-time);
+
+    &--submit {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        min-width: 200px;
+    }
+
+    &--subscription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-left: 12px;
+        min-width: 200px;
+    }
 }
 
-.button-primaru.submit {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    min-width: 200px;
-}
-
-.button-primaru.subscription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-left: 12px;
-    min-width: 200px;
-}
-
-.button-icon {
+.button__icon {
     margin-left: 10px;
 }
 
-.button-primaru:hover,
-.button-primaru:focus {
+.button__primaru:hover,
+.button__primaru:focus {
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

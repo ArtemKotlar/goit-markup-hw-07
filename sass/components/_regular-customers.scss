@@ -25,13 +25,13 @@
     border-radius: 4px;
     color: #AFB1B8;
     transition: border var(--cubic-time),
-        color var(--cubic-time);
-}
+    color var(--cubic-time);
 
-.firm__link:hover,
-.firm__link:focus {
-    border: 1px solid var(--accnent-color);
-    color: var(--accnent-color);
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accnent-color);
+        color: var(--accnent-color);
+    }
 }
 
 .firm__icon {

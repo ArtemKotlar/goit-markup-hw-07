@@ -19,23 +19,23 @@
     border-radius: 50%;
     color: #AFB1B8;
     transition: color var(--cubic-time),
-        background-color var(--cubic-time);
-}
+    background-color var(--cubic-time);
 
-.socials__link:hover,
-.socials__link:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accnent-color);
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accnent-color);
+    }
+
+    &--changes {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }
 
 .socials__icon {
     fill: currentColor;
-}
 
-.socials__link--changes {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.socials__icon--changes {
-    fill: #FFFFFF;
+    &--changes {
+        fill: #FFFFFF;
+    }
 }
